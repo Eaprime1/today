@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <style>
+      .cosmic-bg { fill: #0a0e27; }
+      .metatron-lines { fill: none; stroke: #e8e8e8; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+      .armenian-border { fill: none; stroke: #ff4500; stroke-width: 6; }
+    </style>
+  </defs>
+  
+  <!-- Cosmic Blue-Black Background -->
+  <rect class="cosmic-bg" width="400" height="300" rx="2"/>
+  
+  <!-- Metatron's Cube Geometry -->
+  <g transform="translate(200, 150)">
+    <!-- Outer 6 circles forming hexagon -->
+    <circle class="metatron-lines" cx="0" cy="-60" r="20"/>
+    <circle class="metatron-lines" cx="52" cy="-30" r="20"/>
+    <circle class="metatron-lines" cx="52" cy="30" r="20"/>
+    <circle class="metatron-lines" cx="0" cy="60" r="20"/>
+    <circle class="metatron-lines" cx="-52" cy="30" r="20"/>
+    <circle class="metatron-lines" cx="-52" cy="-30" r="20"/>
+    
+    <!-- Center circle -->
+    <circle class="metatron-lines" cx="0" cy="0" r="20"/>
+    
+    <!-- Connecting lines - forming the cube structure -->
+    <!-- Outer hexagon connections -->
+    <line class="metatron-lines" x1="0" y1="-60" x2="52" y2="-30"/>
+    <line class="metatron-lines" x1="52" y1="-30" x2="52" y2="30"/>
+    <line class="metatron-lines" x1="52" y1="30" x2="0" y2="60"/>
+    <line class="metatron-lines" x1="0" y1="60" x2="-52" y2="30"/>
+    <line class="metatron-lines" x1="-52" y1="30" x2="-52" y2="-30"/>
+    <line class="metatron-lines" x1="-52" y1="-30" x2="0" y2="-60"/>
+    
+    <!-- Radial connections from center to outer circles -->
+    <line class="metatron-lines" x1="0" y1="0" x2="0" y2="-60"/>
+    <line class="metatron-lines" x1="0" y1="0" x2="52" y2="-30"/>
+    <line class="metatron-lines" x1="0" y1="0" x2="52" y2="30"/>
+    <line class="metatron-lines" x1="0" y1="0" x2="0" y2="60"/>
+    <line class="metatron-lines" x1="0" y1="0" x2="-52" y2="30"/>
+    <line class="metatron-lines" x1="0" y1="0" x2="-52" y2="-30"/>
+    
+    <!-- Inner cube lines (creating 3D effect) -->
+    <line class="metatron-lines" x1="0" y1="-60" x2="52" y2="30"/>
+    <line class="metatron-lines" x1="0" y1="-60" x2="-52" y2="30"/>
+    <line class="metatron-lines" x1="52" y1="-30" x2="-52" y2="30"/>
+    <line class="metatron-lines" x1="52" y1="-30" x2="0" y2="60"/>
+    <line class="metatron-lines" x1="52" y1="30" x2="-52" y2="-30"/>
+    <line class="metatron-lines" x1="0" y1="60" x2="-52" y2="-30"/>
+    
+    <!-- Star of David pattern lines -->
+    <line class="metatron-lines" x1="-52" y1="-30" x2="52" y2="30"/>
+    <line class="metatron-lines" x1="-52" y1="30" x2="52" y2="-30"/>
+  </g>
+  
+  <!-- Armenian Orange-Red Border -->
+  <rect class="armenian-border" x="3" y="3" width="394" height="294" rx="2"/>
+</svg>

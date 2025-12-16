@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <style>
+      .cosmic-bg { fill: #0a0e27; }
+      .metatron-lines { fill: none; stroke: #e8e8e8; stroke-width: 1.5; stroke-linecap: round; }
+      .cyan-wave { fill: none; stroke: #00d4ff; stroke-width: 2; }
+    </style>
+    
+    <radialGradient id="goldenGlow128" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffeb3b; stop-opacity:0.7"/>
+      <stop offset="40%" style="stop-color:#ffa726; stop-opacity:0.5"/>
+      <stop offset="80%" style="stop-color:#ff6f00; stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#ff6f00; stop-opacity:0"/>
+    </radialGradient>
+    
+    <radialGradient id="wingGlow128" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" style="stop-color:#ffeb3b; stop-opacity:0.5"/>
+      <stop offset="50%" style="stop-color:#ffa726; stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#ff6f00; stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  
+  <rect class="cosmic-bg" width="128" height="128"/>
+  
+  <!-- Golden radiance -->
+  <g transform="translate(64, 64)">
+    <ellipse fill="url(#wingGlow128)" cx="-20" cy="0" rx="30" ry="25" transform="rotate(-15 -20 0)"/>
+    <ellipse fill="url(#wingGlow128)" cx="20" cy="0" rx="30" ry="25" transform="rotate(15 20 0)"/>
+    <circle fill="url(#goldenGlow128)" cx="0" cy="0" r="40"/>
+  </g>
+  
+  <!-- Metatron's Cube -->
+  <g transform="translate(64, 64)">
+    <circle class="metatron-lines" cx="0" cy="-20" r="6"/>
+    <circle class="metatron-lines" cx="17" cy="-10" r="6"/>
+    <circle class="metatron-lines" cx="17" cy="10" r="6"/>
+    <circle class="metatron-lines" cx="0" cy="20" r="6"/>
+    <circle class="metatron-lines" cx="-17" cy="10" r="6"/>
+    <circle class="metatron-lines" cx="-17" cy="-10" r="6"/>
+    <circle class="metatron-lines" cx="0" cy="0" r="6"/>
+    
+    <line class="metatron-lines" x1="0" y1="-20" x2="17" y2="-10"/>
+    <line class="metatron-lines" x1="17" y1="-10" x2="17" y2="10"/>
+    <line class="metatron-lines" x1="17" y1="10" x2="0" y2="20"/>
+    <line class="metatron-lines" x1="0" y1="20" x2="-17" y2="10"/>
+    <line class="metatron-lines" x1="-17" y1="10" x2="-17" y2="-10"/>
+    <line class="metatron-lines" x1="-17" y1="-10" x2="0" y2="-20"/>
+    
+    <line class="metatron-lines" x1="0" y1="0" x2="0" y2="-20"/>
+    <line class="metatron-lines" x1="0" y1="0" x2="17" y2="-10"/>
+    <line class="metatron-lines" x1="0" y1="0" x2="17" y2="10"/>
+    <line class="metatron-lines" x1="0" y1="0" x2="0" y2="20"/>
+    <line class="metatron-lines" x1="0" y1="0" x2="-17" y2="10"/>
+    <line class="metatron-lines" x1="0" y1="0" x2="-17" y2="-10"/>
+    
+    <line class="metatron-lines" x1="-17" y1="-10" x2="17" y2="10"/>
+    <line class="metatron-lines" x1="-17" y1="10" x2="17" y2="-10"/>
+  </g>
+  
+  <!-- Simplified wave border -->
+  <path class="cyan-wave" d="
+    M 5,3 Q 8,1 11,3 T 17,3 T 23,3 T 29,3 T 35,3 T 41,3 T 47,3 T 53,3 T 59,3 T 65,3 T 71,3 T 77,3 T 83,3 T 89,3 T 95,3 T 101,3 T 107,3 T 113,3 T 119,3 L 123,3
+    L 125,5 Q 127,8 125,11 T 125,17 T 125,23 T 125,29 T 125,35 T 125,41 T 125,47 T 125,53 T 125,59 T 125,65 T 125,71 T 125,77 T 125,83 T 125,89 T 125,95 T 125,101 T 125,107 T 125,113 T 125,119 L 125,123
+    L 123,125 Q 120,127 117,125 T 111,125 T 105,125 T 99,125 T 93,125 T 87,125 T 81,125 T 75,125 T 69,125 T 63,125 T 57,125 T 51,125 T 45,125 T 39,125 T 33,125 T 27,125 T 21,125 T 15,125 T 9,125 L 5,125
+    L 3,123 Q 1,120 3,117 T 3,111 T 3,105 T 3,99 T 3,93 T 3,87 T 3,81 T 3,75 T 3,69 T 3,63 T 3,57 T 3,51 T 3,45 T 3,39 T 3,33 T 3,27 T 3,21 T 3,15 T 3,9 L 3,5 Z
+  "/>
+</svg>

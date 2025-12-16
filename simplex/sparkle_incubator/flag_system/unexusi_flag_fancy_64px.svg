@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <style>
+      .cosmic-bg { fill: #0a0e27; }
+      .metatron-lines { fill: none; stroke: #ffffff; stroke-width: 1; }
+      .cyan-wave { fill: none; stroke: #00d4ff; stroke-width: 1.5; }
+    </style>
+    
+    <radialGradient id="goldenGlow64" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffeb3b; stop-opacity:0.6"/>
+      <stop offset="50%" style="stop-color:#ffa726; stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#ff6f00; stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  
+  <rect class="cosmic-bg" width="64" height="64"/>
+  
+  <!-- Simplified golden glow -->
+  <circle fill="url(#goldenGlow64)" cx="32" cy="32" r="25"/>
+  
+  <!-- Simplified Metatron -->
+  <g transform="translate(32, 32)">
+    <circle class="metatron-lines" cx="0" cy="-12" r="3"/>
+    <circle class="metatron-lines" cx="10" cy="-6" r="3"/>
+    <circle class="metatron-lines" cx="10" cy="6" r="3"/>
+    <circle class="metatron-lines" cx="0" cy="12" r="3"/>
+    <circle class="metatron-lines" cx="-10" cy="6" r="3"/>
+    <circle class="metatron-lines" cx="-10" cy="-6" r="3"/>
+    <circle class="metatron-lines" cx="0" cy="0" r="3"/>
+    
+    <line class="metatron-lines" x1="0" y1="-12" x2="10" y2="-6"/>
+    <line class="metatron-lines" x1="10" y1="-6" x2="10" y2="6"/>
+    <line class="metatron-lines" x1="10" y1="6" x2="0" y2="12"/>
+    <line class="metatron-lines" x1="0" y1="12" x2="-10" y2="6"/>
+    <line class="metatron-lines" x1="-10" y1="6" x2="-10" y2="-6"/>
+    <line class="metatron-lines" x1="-10" y1="-6" x2="0" y2="-12"/>
+    
+    <line class="metatron-lines" x1="0" y1="0" x2="0" y2="-12"/>
+    <line class="metatron-lines" x1="0" y1="0" x2="10" y2="6"/>
+    <line class="metatron-lines" x1="0" y1="0" x2="-10" y2="6"/>
+  </g>
+  
+  <!-- Very simplified wave border -->
+  <path class="cyan-wave" d="
+    M 3,2 Q 5,1 7,2 T 11,2 T 15,2 T 19,2 T 23,2 T 27,2 T 31,2 T 35,2 T 39,2 T 43,2 T 47,2 T 51,2 T 55,2 T 59,2 L 61,2
+    L 62,3 Q 63,5 62,7 T 62,11 T 62,15 T 62,19 T 62,23 T 62,27 T 62,31 T 62,35 T 62,39 T 62,43 T 62,47 T 62,51 T 62,55 T 62,59 L 62,61
+    L 61,62 Q 59,63 57,62 T 53,62 T 49,62 T 45,62 T 41,62 T 37,62 T 33,62 T 29,62 T 25,62 T 21,62 T 17,62 T 13,62 T 9,62 T 5,62 L 3,62
+    L 2,61 Q 1,59 2,57 T 2,53 T 2,49 T 2,45 T 2,41 T 2,37 T 2,33 T 2,29 T 2,25 T 2,21 T 2,17 T 2,13 T 2,9 T 2,5 L 2,3 Z
+  "/>
+</svg>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <style>
+      .cosmic-bg { fill: #0a0e27; }
+      .metatron-lines { fill: none; stroke: #e8e8e8; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+      .cyan-wave-border { fill: none; stroke: #00d4ff; stroke-width: 4; }
+    </style>
+    
+    <!-- Radial gradient for golden glow -->
+    <radialGradient id="goldenGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffeb3b; stop-opacity:0.8"/>
+      <stop offset="30%" style="stop-color:#ffa726; stop-opacity:0.6"/>
+      <stop offset="60%" style="stop-color:#ff6f00; stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#ff6f00; stop-opacity:0"/>
+    </radialGradient>
+    
+    <!-- Wings gradient -->
+    <radialGradient id="wingGlow" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" style="stop-color:#ffeb3b; stop-opacity:0.6"/>
+      <stop offset="40%" style="stop-color:#ffa726; stop-opacity:0.4"/>
+      <stop offset="80%" style="stop-color:#ff6f00; stop-opacity:0.1"/>
+      <stop offset="100%" style="stop-color:#ff6f00; stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Cosmic Blue-Black Background -->
+  <rect class="cosmic-bg" width="400" height="300"/>
+  
+  <!-- Golden Wings/Radiance Effect -->
+  <g transform="translate(200, 150)">
+    <!-- Left wing -->
+    <ellipse fill="url(#wingGlow)" cx="-60" cy="0" rx="80" ry="60" transform="rotate(-15 -60 0)"/>
+    <!-- Right wing -->
+    <ellipse fill="url(#wingGlow)" cx="60" cy="0" rx="80" ry="60" transform="rotate(15 60 0)"/>
+    <!-- Central glow -->
+    <circle fill="url(#goldenGlow)" cx="0" cy="0" r="100"/>
+  </g>
+  
+  <!-- Metatron's Cube Geometry (same as operational) -->
+  <g transform="translate(200, 150)">
+    <!-- Outer 6 circles -->
+    <circle class="metatron-lines" cx="0" cy="-60" r="20"/>
+    <circle class="metatron-lines" cx="52" cy="-30" r="20"/>
+    <circle class="metatron-lines" cx="52" cy="30" r="20"/>
+    <circle class="metatron-lines" cx="0" cy="60" r="20"/>
+    <circle class="metatron-lines" cx="-52" cy="30" r="20"/>
+    <circle class="metatron-lines" cx="-52" cy="-30" r="20"/>
+    <circle class="metatron-lines" cx="0" cy="0" r="20"/>
+    
+    <!-- Outer hexagon -->
+    <line class="metatron-lines" x1="0" y1="-60" x2="52" y2="-30"/>
+    <line class="metatron-lines" x1="52" y1="-30" x2="52" y2="30"/>
+    <line class="metatron-lines" x1="52" y1="30" x2="0" y2="60"/>
+    <line class="metatron-lines" x1="0" y1="60" x2="-52" y2="30"/>
+    <line class="metatron-lines" x1="-52" y1="30" x2="-52" y2="-30"/>
+    <line class="metatron-lines" x1="-52" y1="-30" x2="0" y2="-60"/>
+    
+    <!-- Radial connections -->
+    <line class="metatron-lines" x1="0" y1="0" x2="0" y2="-60"/>
+    <line class="metatron-lines" x1="0" y1="0" x2="52" y2="-30"/>
+    <line class="metatron-lines" x1="0" y1="0" x2="52" y2="30"/>
+    <line class="metatron-lines" x1="0" y1="0" x2="0" y2="60"/>
+    <line class="metatron-lines" x1="0" y1="0" x2="-52" y2="30"/>
+    <line class="metatron-lines" x1="0" y1="0" x2="-52" y2="-30"/>
+    
+    <!-- Inner cube -->
+    <line class="metatron-lines" x1="0" y1="-60" x2="52" y2="30"/>
+    <line class="metatron-lines" x1="0" y1="-60" x2="-52" y2="30"/>
+    <line class="metatron-lines" x1="52" y1="-30" x2="-52" y2="30"/>
+    <line class="metatron-lines" x1="52" y1="-30" x2="0" y2="60"/>
+    <line class="metatron-lines" x1="52" y1="30" x2="-52" y2="-30"/>
+    <line class="metatron-lines" x1="0" y1="60" x2="-52" y2="-30"/>
+    
+    <!-- Star of David -->
+    <line class="metatron-lines" x1="-52" y1="-30" x2="52" y2="30"/>
+    <line class="metatron-lines" x1="-52" y1="30" x2="52" y2="-30"/>
+  </g>
+  
+  <!-- Decorative Cyan Wave Border -->
+  <path class="cyan-wave-border" d="
+    M 10,5
+    Q 15,2 20,5
+    T 40,5
+    T 60,5
+    T 80,5
+    T 100,5
+    T 120,5
+    T 140,5
+    T 160,5
+    T 180,5
+    T 200,5
+    T 220,5
+    T 240,5
+    T 260,5
+    T 280,5
+    T 300,5
+    T 320,5
+    T 340,5
+    T 360,5
+    T 380,5
+    L 390,5
+    
+    L 395,10
+    Q 398,15 395,20
+    T 395,40
+    T 395,60
+    T 395,80
+    T 395,100
+    T 395,120
+    T 395,140
+    T 395,160
+    T 395,180
+    T 395,200
+    T 395,220
+    T 395,240
+    T 395,260
+    T 395,280
+    L 395,290
+    
+    L 390,295
+    Q 385,298 380,295
+    T 360,295
+    T 340,295
+    T 320,295
+    T 300,295
+    T 280,295
+    T 260,295
+    T 240,295
+    T 220,295
+    T 200,295
+    T 180,295
+    T 160,295
+    T 140,295
+    T 120,295
+    T 100,295
+    T 80,295
+    T 60,295
+    T 40,295
+    T 20,295
+    L 10,295
+    
+    L 5,290
+    Q 2,285 5,280
+    T 5,260
+    T 5,240
+    T 5,220
+    T 5,200
+    T 5,180
+    T 5,160
+    T 5,140
+    T 5,120
+    T 5,100
+    T 5,80
+    T 5,60
+    T 5,40
+    T 5,20
+    L 5,10
+    Z
+  "/>
+</svg>

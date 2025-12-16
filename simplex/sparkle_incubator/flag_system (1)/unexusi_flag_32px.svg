@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <style>
+      .cosmic-bg { fill: #0a0e27; }
+      .metatron-lines { fill: none; stroke: #ffffff; stroke-width: 1.5; stroke-linecap: round; }
+      .armenian-border { fill: none; stroke: #ff4500; stroke-width: 1.5; }
+    </style>
+  </defs>
+  
+  <rect class="cosmic-bg" width="32" height="32"/>
+  
+  <g transform="translate(16, 16)">
+    <!-- Ultra-simplified hexagon with center -->
+    <circle class="metatron-lines" cx="0" cy="-8" r="2"/>
+    <circle class="metatron-lines" cx="7" cy="-4" r="2"/>
+    <circle class="metatron-lines" cx="7" cy="4" r="2"/>
+    <circle class="metatron-lines" cx="0" cy="8" r="2"/>
+    <circle class="metatron-lines" cx="-7" cy="4" r="2"/>
+    <circle class="metatron-lines" cx="-7" cy="-4" r="2"/>
+    <circle class="metatron-lines" cx="0" cy="0" r="2"/>
+    
+    <!-- Outer hexagon only -->
+    <line class="metatron-lines" x1="0" y1="-8" x2="7" y2="-4"/>
+    <line class="metatron-lines" x1="7" y1="-4" x2="7" y2="4"/>
+    <line class="metatron-lines" x1="7" y1="4" x2="0" y2="8"/>
+    <line class="metatron-lines" x1="0" y1="8" x2="-7" y2="4"/>
+    <line class="metatron-lines" x1="-7" y1="4" x2="-7" y2="-4"/>
+    <line class="metatron-lines" x1="-7" y1="-4" x2="0" y2="-8"/>
+    
+    <!-- Just 6 radial lines from center -->
+    <line class="metatron-lines" x1="0" y1="0" x2="0" y2="-8"/>
+    <line class="metatron-lines" x1="0" y1="0" x2="7" y2="-4"/>
+    <line class="metatron-lines" x1="0" y1="0" x2="7" y2="4"/>
+    <line class="metatron-lines" x1="0" y1="0" x2="0" y2="8"/>
+    <line class="metatron-lines" x1="0" y1="0" x2="-7" y2="4"/>
+    <line class="metatron-lines" x1="0" y1="0" x2="-7" y2="-4"/>
+  </g>
+  
+  <rect class="armenian-border" x="1" y="1" width="30" height="30"/>
+</svg>

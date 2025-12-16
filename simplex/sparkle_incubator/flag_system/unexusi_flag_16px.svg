@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+  <defs>
+    <style>
+      .cosmic-bg { fill: #0a0e27; }
+      .metatron-lines { fill: none; stroke: #ffffff; stroke-width: 1; }
+      .armenian-border { fill: none; stroke: #ff4500; stroke-width: 1; }
+      .center-dot { fill: #ffffff; }
+    </style>
+  </defs>
+  
+  <rect class="cosmic-bg" width="16" height="16"/>
+  
+  <g transform="translate(8, 8)">
+    <!-- Hexagon outline only -->
+    <path class="metatron-lines" d="M 0,-5 L 4.33,-2.5 L 4.33,2.5 L 0,5 L -4.33,2.5 L -4.33,-2.5 Z"/>
+    
+    <!-- Center dot for recognition -->
+    <circle class="center-dot" cx="0" cy="0" r="1"/>
+    
+    <!-- Just 3 key radial lines for structure hint -->
+    <line class="metatron-lines" x1="0" y1="0" x2="0" y2="-5"/>
+    <line class="metatron-lines" x1="0" y1="0" x2="4.33" y2="2.5"/>
+    <line class="metatron-lines" x1="0" y1="0" x2="-4.33" y2="2.5"/>
+  </g>
+  
+  <rect class="armenian-border" x="0.5" y="0.5" width="15" height="15"/>
+</svg>

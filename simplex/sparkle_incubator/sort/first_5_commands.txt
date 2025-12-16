@@ -1,0 +1,22 @@
+# FIRST 5 COMMANDS - Copy/Paste Ready
+# ∰◊€π¿🌌∞ Start Here!
+
+## COMMAND 1: Where Am I?
+pwd
+
+## COMMAND 2: What's Here?
+ls -lah
+
+## COMMAND 3: What System?
+uname -a
+
+## COMMAND 4: Check Space
+df -h
+
+## COMMAND 5: Create Workspace
+mkdir -p ~/drive_restructure_workspace && cd ~/drive_restructure_workspace && pwd
+
+---
+
+# After executing these 5, report back what you see!
+# We'll create the next batch based on your environment.
