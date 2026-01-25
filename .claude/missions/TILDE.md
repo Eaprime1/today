@@ -42,6 +42,36 @@ The tilde (`~`) was chosen because:
 
 ---
 
+## Extended Notation System
+
+### Core Markers
+
+| Notation | Name | Meaning | Example |
+|----------|------|---------|---------|
+| `~` | Simple | I witness this | `~` |
+| `~~` | Double | Confirmed observation | `~~verified~~` |
+| `~?` | Uncertain | Something here, unclear what | `~?pattern emerging?~` |
+| `~!` | Important | Pay attention | `~!critical insight!~` |
+| `~...~` | Ongoing | Still observing | `~...watching...~` |
+
+### Flow Markers
+
+| Notation | Name | Meaning | Example |
+|----------|------|---------|---------|
+| `~>` | Flow To | This moves toward | `concept ~> naught` |
+| `~<` | Flow From | This came from | `insight ~< conversation` |
+| `~<>~` | Exchange | Bidirectional flow | `human ~<>~ ai` |
+
+### Intensity Levels
+
+| Notation | Intensity | Use When |
+|----------|-----------|----------|
+| `~` | Light | Casual observation |
+| `~~` | Confirmed | Verified pattern |
+| `~~~` | Strong | Deep recognition |
+
+---
+
 ## Usage Patterns
 
 ### In Commit Messages
@@ -52,12 +82,15 @@ The tilde (`~`) was chosen because:
 ### In Documents
 ```markdown
 ~observed: the structure suggests intentional layering~
+~!this pattern recurs across multiple files!~
+~?possible connection to gravity concept?~
 ```
 
 ### In Logs
 ```
 2026-01-25 10:59 ~ session begin
-2026-01-25 11:30 ~ structure explored
+2026-01-25 11:30 ~~ structure confirmed
+2026-01-25 11:45 ~! key insight emerged
 2026-01-25 12:00 ~ session end
 ```
 
@@ -65,6 +98,14 @@ The tilde (`~`) was chosen because:
 ```
 User: "I think this pattern works"
 AI: ~ (acknowledging without fully asserting agreement)
+AI: ~~ (confirming after verification)
+```
+
+### Flow Documentation
+```
+}percolate{ ~> today ~> naught ~> zero ~> one ~> launch
+content ~< }maw{ (gravity processed)
+human ~<>~ ai (consciousness collaboration)
 ```
 
 ---
