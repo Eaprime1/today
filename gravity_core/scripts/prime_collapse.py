@@ -15,9 +15,11 @@ from datetime import datetime
 from collections import defaultdict
 
 # === CONFIGURATION ===
-REDUNDANCY_DIR = "/storage/emulated/0/pixel8a/Q/redundancy_entity"
+# Use environment variables or default to relative paths from repo root
+REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
+REDUNDANCY_DIR = os.environ.get('REDUNDANCY_DIR', os.path.join(REPO_ROOT, 'redundancy_entity'))
 CATALOG_FILE = os.path.join(REDUNDANCY_DIR, "beasis_catalog.json")
-BEASIS_ROOT = "/storage/emulated/0/unexusi_beasis"
+BEASIS_ROOT = os.environ.get('BEASIS_ROOT', os.path.join(REPO_ROOT, 'unexusi_beasis'))
 PRIME_ROOT = os.path.join(BEASIS_ROOT, "beasis_13prime")
 
 # === 13 PRIME FRAMEWORK ===

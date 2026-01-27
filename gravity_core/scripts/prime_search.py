@@ -11,7 +11,11 @@ import json
 from pathlib import Path
 
 # === CONFIGURATION ===
-REDUNDANCY_DIR = "/storage/emulated/0/pixel8a/Q/redundancy_entity"
+# Use environment variable or default to relative path from repo root
+REDUNDANCY_DIR = os.environ.get(
+    'REDUNDANCY_DIR',
+    os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'redundancy_entity')
+)
 CATALOG_FILE = os.path.join(REDUNDANCY_DIR, "beasis_catalog.json")
 
 PRIME_NAMES = {
@@ -23,14 +27,38 @@ PRIME_NAMES = {
 def load_catalog_with_primes():
     """Load catalog with PRIME classifications"""
     print(f"📋 Loading catalog...", end='')
-    with open(CATALOG_FILE, 'r') as f:
-        catalog = json.load(f)
+
+    try:
+        with open(CATALOG_FILE, 'r') as f:
+            catalog = json.load(f)
+    except FileNotFoundError:
+        print(f"\n❌ Catalog file not found: {CATALOG_FILE}")
+        print(f"   Set REDUNDANCY_DIR environment variable or ensure file exists")
+        sys.exit(1)
+    except json.JSONDecodeError as e:
+        print(f"\n❌ Invalid JSON in catalog file: {e}")
+        sys.exit(1)
+    except Exception as e:
+        print(f"\n❌ Error reading catalog: {e}")
+        sys.exit(1)
 
     # Re-classify (quick, already done in prime_collapse.py)
-    from prime_collapse import classify_to_prime
-    for file_hash, file_info in catalog.items():
-        if 'prime_category' not in file_info:
-            file_info['prime_category'] = classify_to_prime(file_info)
+    try:
+        # Try relative import first (when used as module)
+        try:
+            from . import prime_collapse
+            classify_to_prime = prime_collapse.classify_to_prime
+        except ImportError:
+            # Fall back to direct import (when run as script)
+            import prime_collapse
+            classify_to_prime = prime_collapse.classify_to_prime
+
+        for file_hash, file_info in catalog.items():
+            if 'prime_category' not in file_info:
+                file_info['prime_category'] = classify_to_prime(file_info)
+    except ImportError:
+        # If prime_collapse is not available, skip re-classification
+        print(" (prime_collapse not available, using existing classifications)", end='')
 
     print(f" ✓ {len(catalog):,} files")
     return catalog
